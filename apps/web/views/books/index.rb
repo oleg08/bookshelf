@@ -1,9 +1,6 @@
-module Web
-  module Views
-    module Books
-      class Index
-        include Web::View
-      end
-    end
+module Web::Views::Books
+  class Index
+    include Web::View
+
   end
 end

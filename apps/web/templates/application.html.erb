@@ -2,9 +2,13 @@
 <html>
   <head>
     <title>Bookshelf</title>
+    <%= stylesheet 'bootstrap' %>
+    <%= javascript 'bootstrap' %>
   </head>
   <body>
-    <h1>Bookshelf</h1>
-  <%= yield %>
+    <%= render partial: 'shared/header' %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

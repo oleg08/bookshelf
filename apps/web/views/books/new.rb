@@ -1,9 +1,5 @@
-module Web
-  module Views
-    module Books
-      class New
-        include Web::View
-      end
-    end
+module Web::Views::Books
+  class New
+    include Web::View
   end
 end
