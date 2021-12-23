@@ -13,18 +13,29 @@
 
 <%=
   form_for :book, routes.books_path do
-    div class: 'input' do
-      label      :title
-      text_field :title
+
+    div class: 'row' do
+      div class: 'col-md-4' do
+        div class: 'input' do
+          label      :title
+          text_field :title, class: 'form-control'
+        end
+      end
+
+      div class: 'col-md-4' do
+        div class: 'input' do
+          label      :author
+          text_field :author, class: 'form-control'
+        end
+      end
     end
 
-    div class: 'input' do
-      label      :author
-      text_field :author
-    end
-
-    div class: 'controls' do
-      submit 'Create Book'
+    div class: 'row mt-4' do
+      div class: 'col-md-4' do
+        div class: 'controls' do
+          submit 'Create Book', class: 'btn btn-success'
+        end
+      end
     end
   end
 %>
